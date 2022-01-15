@@ -12,11 +12,11 @@ jobs:
             exclude: 'capi'
           - check: 'known_pass'
             exclude: 'capi'
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
     - uses: actions/checkout@v2
     - name: Run clang-format style check for C/C++ programs.
-      uses: jidicula/clang-format-action@issue-33
+      uses: jidicula/clang-format-action@v4.4.1
       with:
         check-path: ${{ matrix.path['check'] }}
         exclude-regex: ${{ matrix.path['exclude'] }}
