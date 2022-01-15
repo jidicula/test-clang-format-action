@@ -16,7 +16,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Run clang-format style check for C/C++ programs.
-      uses: Krzmbrzl/clang-format-action@decouple-from-specific-distro
+      uses: jidicula/clang-format-action@issue-33
       with:
         check-path: ${{ matrix.path['check'] }}
         exclude-regex: ${{ matrix.path['exclude'] }}
