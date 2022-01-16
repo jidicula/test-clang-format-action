@@ -6,6 +6,7 @@ jobs:
   formatting-check:
     name: Formatting Check
     strategy:
+      fail-fast: false
       matrix:
         path:
           - check: 'known_fail'
