@@ -20,4 +20,5 @@ jobs:
       uses: jidicula/clang-format-action@v4.10.1
       with:
         check-path: ${{ matrix.path['check'] }}
+        clang-format-version: '10'
         exclude-regex: ${{ matrix.path['exclude'] }}
